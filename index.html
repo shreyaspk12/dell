@@ -2,29 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shreya | UGC Creator • Web Developer • Designer</title>
+<title>Shreya | UGC Creator • Web Developer • Creative Designer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Orbitron',sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#0a0a0f;
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url('https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1920&q=80')
+        center/cover no-repeat fixed;
     color:#fff;
     line-height:1.6;
 }
 
-header{
-    padding:120px 20px;
+section{
+    padding:90px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
     text-align:center;
-    background:linear-gradient(135deg,#0f0f0f,#000);
+    margin-bottom:60px;
+    font-size:34px;
+}
+
+/* ===== HERO ===== */
+
+header{
+    text-align:center;
+    padding:140px 20px;
 }
 
 header img{
@@ -32,80 +49,98 @@ header img{
     height:160px;
     border-radius:50%;
     object-fit:cover;
-    border:3px solid #00f0ff;
-    box-shadow:0 0 30px #00f0ff;
     margin-bottom:25px;
+    border:4px solid #00c3ff;
+    transition:0.4s;
+}
+
+header img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 30px rgba(0,195,255,0.6);
 }
 
 header h1{
     font-size:50px;
-    color:#00f0ff;
-    text-shadow:0 0 20px #00f0ff;
-    margin-bottom:10px;
+    font-weight:700;
 }
 
 header p{
-    color:#ff00c8;
     font-size:18px;
-    margin-bottom:30px;
+    color:#ddd;
+    margin:15px 0 35px;
 }
 
 .btn{
-    padding:12px 28px;
-    border:2px solid #00f0ff;
+    display:inline-block;
+    padding:14px 35px;
+    background:#00c3ff;
+    color:#000;
+    font-weight:600;
     border-radius:30px;
-    text-decoration:none;
-    color:#00f0ff;
     transition:0.3s;
 }
 
 .btn:hover{
-    background:#00f0ff;
-    color:#000;
-    box-shadow:0 0 20px #00f0ff;
+    background:#fff;
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,195,255,0.4);
 }
 
-section{
-    padding:80px 20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-h2{
-    text-align:center;
-    margin-bottom:50px;
-    color:#ff00c8;
-    text-shadow:0 0 15px #ff00c8;
-}
+/* ===== GRID ===== */
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
+    gap:35px;
 }
 
+/* ===== GLASS CARD ===== */
+
 .card{
-    background:#111;
-    padding:25px;
-    border-radius:15px;
-    transition:0.3s;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s;
 }
 
 .card:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 25px #00f0ff;
+    box-shadow:0 20px 40px rgba(0,195,255,0.25);
 }
 
 .card img{
     width:100%;
-    border-radius:12px;
-    margin-bottom:15px;
+    border-radius:15px;
+    margin-bottom:18px;
 }
+
+.card h3{
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#ddd;
+}
+
+/* ===== VIDEO ===== */
 
 iframe{
     width:100%;
-    border-radius:12px;
+    height:220px;
+    border-radius:15px;
 }
+
+/* ===== FULL IMAGE ===== */
+
+.full-width{
+    width:100%;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.7);
+}
+
+/* ===== SKILLS ===== */
 
 .skills{
     display:flex;
@@ -115,85 +150,125 @@ iframe{
 }
 
 .skill{
-    padding:8px 15px;
-    border:1px solid #00f0ff;
-    border-radius:20px;
-    color:#00f0ff;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.1);
+    border-radius:30px;
+    transition:0.3s;
 }
+
+.skill:hover{
+    background:#00c3ff;
+    color:#000;
+}
+
+/* ===== CONTACT ===== */
+
+.contact-box{
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    padding:40px;
+    border-radius:25px;
+}
+
+.contact-box p{
+    margin-bottom:15px;
+    color:#ddd;
+}
+
+/* ===== FOOTER ===== */
 
 footer{
     text-align:center;
     padding:40px;
     background:#000;
-    color:#666;
+    color:#777;
 }
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+    header h1{
+        font-size:38px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="image.png" alt="Shreya">
-    <h1>SHREYA</h1>
-    <p>UGC Creator ⚡ Web Developer ⚡ Creative Designer</p>
-    <a href="#contact" class="btn">LET'S BUILD</a>
+  
+    <h1>Shreya</h1>
+    <p>UGC Creator • Web Developer • Creative Designer</p>
+    <a href="#contact" class="btn">Work With Me</a>
 </header>
 
 <section>
-<h2>UGC VIDEO PORTFOLIO</h2>
+<h2>UGC Video Portfolio</h2>
+
 <div class="grid">
 
 <div class="card">
-<h3>Conversion UGC Ad</h3>
-<iframe src="https://player.vimeo.com/video/1165917543" height="220" allowfullscreen></iframe>
+<h3>Conversion-Focused UGC Ad</h3>
+<iframe src="https://player.vimeo.com/video/1165917543" allowfullscreen></iframe>
 </div>
 
 <div class="card">
-<h3>Product Review Ad</h3>
-<iframe src="https://player.vimeo.com/video/1165925890" height="220" allowfullscreen></iframe>
+<h3>Product Review Campaign</h3>
+<iframe src="https://player.vimeo.com/video/1165925890" allowfullscreen></iframe>
 </div>
 
 </div>
 </section>
 
 <section>
-<h2>DESIGN PROJECTS</h2>
+<h2>Featured Real Estate Campaign</h2>
+<img src="skyi-songbirds.jpg" class="full-width" alt="Skyi Songbirds Campaign">
+</section>
+
+<section>
+<h2>Design Projects</h2>
+
 <div class="grid">
 
 <div class="card">
-<img src="hyt-design.png" alt="HYT Corporate Design">
-<h3>Corporate New Year Design</h3>
-<p>Professional greeting design created for HYT Engineering.</p>
+<img src="hyt-design.png" alt="Corporate Greeting Design">
+<h3>Corporate Greeting Design</h3>
+<p>Professional New Year campaign creative for industrial branding.</p>
 </div>
 
 <div class="card">
 <img src="menu-design.png" alt="Restaurant Menu Design">
 <h3>Restaurant Menu Layout</h3>
-<p>Modern food & beverage menu layout with clean typography.</p>
+<p>Modern F&B menu design with structured typography and layout hierarchy.</p>
 </div>
 
 </div>
 </section>
 
 <section>
-<h2>WEB DEVELOPMENT</h2>
+<h2>Web Development</h2>
+
 <div class="grid">
 
 <div class="card">
-<h3>Landing Pages</h3>
-<p>Conversion-focused, responsive, mobile-first builds.</p>
+<h3>Conversion Landing Pages</h3>
+<p>Mobile-first, high-performance pages built for lead generation and sales.</p>
 </div>
 
 <div class="card">
 <h3>Business Websites</h3>
-<p>Modern UI, optimized performance & user experience.</p>
+<p>Modern UI, optimized speed, and strong UX structure.</p>
 </div>
 
 </div>
 </section>
 
 <section>
-<h2>SKILLS</h2>
+<h2>Core Skills</h2>
+
 <div class="skills">
 <div class="skill">UGC Creation</div>
 <div class="skill">Video Editing</div>
@@ -201,20 +276,24 @@ footer{
 <div class="skill">CSS</div>
 <div class="skill">JavaScript</div>
 <div class="skill">Brand Design</div>
+<div class="skill">Landing Page Optimization</div>
 </div>
+
 </section>
 
 <section id="contact">
-<h2>CONTACT</h2>
-<p style="text-align:center;">
-Email: kolishreya2004@gmail.com<br><br>
-Phone: +91 8788665308<br><br>
-GitHub: github.com/shreyaspk12
-</p>
+<h2>Contact</h2>
+
+<div class="contact-box">
+<p><strong>Email:</strong> kolishreya2004@gmail.com</p>
+<p><strong>Phone:</strong> +91 8788665308</p>
+<p><strong>GitHub:</strong> github.com/shreyaspk12</p>
+</div>
+
 </section>
 
 <footer>
-© 2026 SHREYA | LEVELING UP BRANDS 🚀
+© 2026 Shreya | Building Brands That Convert
 </footer>
 
 </body>
